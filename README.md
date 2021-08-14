@@ -7,6 +7,7 @@ This repository is a TensorFlow2 implementation of [ProtoNet](https://arxiv.org/
 3. source code of two backbones: conv4 (original in paper) and resnet;
 4. source code of utilities such as image preprocessing and dataset.
 
+
 ### Applications
 
 1. By just learning few face images from a random person, the model is able to identify and recognize that person effectively from a group of people. Below are samples tested on the [CelebA](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) dataset.
@@ -19,9 +20,17 @@ In each sample, there are 3 face images learned by the model (under the text "Le
   <img src="https://raw.githubusercontent.com/DrMMZ/drmmz.github.io/master/images/celeba/2.JPG" width='380' height='420'/>
   <img src="https://raw.githubusercontent.com/DrMMZ/drmmz.github.io/master/images/celeba/celeba_movie.gif" width='380' height='420'/>
 </p> 
-The model is trained on the CelebA dataset following its default splitting with Adam optimizer for 60 epochs over 2 GPUs. It achieves the following result after 10 epochs on the test set where query examples in each episode contains exact 1 person same as in support examples.
+The model is trained on the CelebA dataset following its default splitting and image size with ResNet50 backbone and Adam optimizer for 60 epochs over 2 GPUs. It achieves the following results after 10 epochs on the test set where query examples in each episode contains exact 1 person same as in support examples.
 
 |3-shot|time (second)|mean (F1-score)|median (F1-score)|
 |---|---|---|---|
 |1-way, 15-query|0.04|0.91|1.0|
 |1-way, 100-query|0.17|0.82|0.83|
+
+
+### Requirements
+`python 3.7.9`, `tensorflow 2.3.1`, `matplotlib 3.3.4`, `numpy 1.19.2`, `scikit-image 0.17.2` and `scikit-learn 0.23.2`
+
+
+### References
+1. Snell et al., *Prototypical Networks for Few-shot Learning*, https://arxiv.org/abs/1703.05175, 2017
