@@ -19,7 +19,7 @@ In each sample, there are 3 face images learned by the model (under the text "Le
   <img src="https://raw.githubusercontent.com/DrMMZ/drmmz.github.io/master/images/celeba/2.JPG" width='380' height='420'/>
   <img src="https://raw.githubusercontent.com/DrMMZ/drmmz.github.io/master/images/celeba/celeba_movie.gif" width='380' height='420'/>
 </p> 
-The model is trained on the CelebA dataset following its default splitting with Adam optimizer for 60 epochs over 2 GPUs. It achieves the following result after 10 epochs on the test set where query examples in each episode contains exact 1 person from support example(s).
+The model is trained on the CelebA dataset following its default splitting with Adam optimizer for 60 epochs over 2 GPUs. It achieves the following result after 10 epochs on the test set where query examples in each episode contains exact 1 person same as in support examples.
 
 |3-shot|time (second)|mean (F1-score)|median (F1-score)|
 |---|---|---|---|
