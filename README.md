@@ -10,7 +10,14 @@ This repository is a TensorFlow2 implementation of [ProtoNet](https://arxiv.org/
 
 ### Applications
 
-1. By just learning few face images from a random person, the model is able to identify and recognize that person effectively from a group of people. Below are samples tested on the [CelebA](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) dataset.
+1. Recognize Jason Bourne! By using detections obtained from [RetinaNet for Object Detection](https://github.com/DrMMZ/RetinaNet) and the below face recognizer, we are able to track Jason Bourne.
+
+https://user-images.githubusercontent.com/38026940/132160401-ee1f22ca-0b0f-4471-8b62-6144c76cf21c.mp4
+
+Scenes are taken from *The Bourne Ultimatum (2007 film)* and the cover page is from *The Bourne Identity (2002 film)*. 
+
+
+2. By just learning few face images from a random person, the model is able to identify and recognize that person effectively from a group of people. Below are samples tested on the [CelebA](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) dataset.
 <p align="center">
   <img src="https://raw.githubusercontent.com/DrMMZ/drmmz.github.io/master/images/celeba/7.JPG" width='380' height='420'/>
   <img src="https://raw.githubusercontent.com/DrMMZ/drmmz.github.io/master/images/celeba/12.JPG" width='380' height='420'/>
